@@ -18,11 +18,11 @@ A web-based Library Management System developed using Django that helps manage b
 - Django
 - HTML
 - CSS
-- SQLite
+- MySQL
 
 ## How to Run
 1. Clone the repository
 2. Install Django
 3. Run:
    python manage.py runserver
-4. Open http://127.0.0.1:8000/
+
