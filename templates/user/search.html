@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:600px;
+            margin:50px auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        h2{
+            text-align:center;
+            color:#2c3e50;
+        }
+
+        input{
+            width:75%;
+            padding:10px;
+        }
+
+        button{
+            padding:10px 20px;
+            background:#3498db;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#2980b9;
+        }
+
+        table{
+            width:100%;
+            margin-top:20px;
+            border-collapse:collapse;
+        }
+
+        table,th,td{
+            border:1px solid #ccc;
+        }
+
+        th,td{
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background:#3498db;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Search Books</h2>
+
+<form method="GET">
+    <input type="text" name="search" placeholder="Enter Book Name">
+    <button type="submit">Search</button>
+</form>
+
+<br>
+
+<table>
+
+<tr>
+    <th>Book Name</th>
+    <th>Author</th>
+    <th>Category</th>
+    <th>Available</th>
+</tr>
+
+<tr>
+    <td>Python Programming</td>
+    <td>John</td>
+    <td>Programming</td>
+    <td>5</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

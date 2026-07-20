@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Borrow Book</title>
+</head>
+<body>
+
+<h2>Borrow Book</h2>
+
+<form method="POST">
+
+{% csrf_token %}
+
+<input type="text" name="member" placeholder="Member Name"><br><br>
+
+<input type="text" name="book" placeholder="Book Name"><br><br>
+
+<button type="submit">Borrow</button>
+
+</form>
+
+<br>
+
+<a href="/books/">Back</a>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<table>
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Borrowed Status</th>
+</tr>
+
+{% for member in members %}
+
+<tr>
+    <td>{{ member.id }}</td>
+    <td>{{ member.name }}</td>
+    <td>{{ member.email }}</td>
+    <td>{{ member.phone }}</td>
+
+    <td>
+        {% if member.borrowed_status %}
+            Yes
+        {% else %}
+            No
+        {% endif %}
+    </td>
+
+</tr>
+
+{% endfor %}
+
+</table>
